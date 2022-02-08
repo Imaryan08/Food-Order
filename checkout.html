@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/checkout.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">Menu</a>
+        <a href="#">Login</a>
+        <a href="#">Signup</a>
+        <a href="cart.html">Cart<span id="count"> </span></a>
+    </div>
+
+     <!-- Payment Page -->
+     <div id="container">
+        <div class="card">
+          <div class="amt">
+            <p>Total Amount</p>
+            <p id="amount"></p>
+          </div>
+          <p class="cardNo">CARD NUMBER</p>
+          <input
+            type="number"
+            name="cardNumber"
+            id="cardNumber"
+            value="4785123456789"
+            required
+          />
+          <p class="cardNo">NAME</p>
+          <input type="text" name="name" id="name" value="Rampukar Yadav" required />
+  
+          <div class="cardDetails">
+            <div class="expiry">
+              <p class="expiry">EXPIRY</p>
+              <input
+                type="month"
+                name="expiry"
+                value="2022-02"
+                id="expiry"
+                required
+              />
+            </div>
+  
+            <div class="box-3">
+              <p class="cvv">CVV</p>
+              <input
+                name="number"
+                type="text"
+                id="cvv"
+                value="123"
+                maxlength="3"
+                required
+              />
+            </div>
+          </div>
+          <div class="submit">
+            <button type="submit" id="btn">Make Payment</button>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="/scripts/checkout.js"></script>
+</html>
+

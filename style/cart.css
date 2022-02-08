@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+#navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #222;
+    /* padding: 5px; */
+}
+
+#navbar > a{
+    margin: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+#navbar > a:last-child{
+    padding-right: 30px;
+}
+#navbar > a:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.totalBill{
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    color: #fff;
+    padding: 10px 70px;
+}
+.totalBill  button{
+    padding: 5px 30px;
+    font-size: 18px;
+    font-weight: 800;
+    /* color: white;     */
+    /* background-color: #222; */
+    border: none;
+    margin-right: 40px;
+}
+.totalBill  button:hover{
+    color: green;
+    cursor: pointer;
+}
+
+#cart{
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    justify-content: center;
+}
+
+#menu{
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    justify-content: center;
+    grid-gap: 5px;
+}
+@media (max-width: 1200px) and (min-width: 1000px){
+    #cart{
+        display: grid;
+        grid-template-columns: repeat(3,25%);
+        grid-gap: 20px;
+    }   
+} 
+@media (max-width: 1000px) and (min-width: 600px){
+    #cart{
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        grid-gap: 10px;
+    }   
+}
+@media (max-width: 600px) and (min-width: 300px){
+    #cart{
+        display: grid;
+        grid-template-columns: repeat(1,50%);
+        grid-gap: 10px;
+    }   
+}
+
+
+#cart > div {
+    margin: 20px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    width: 250px;
+}
+
+#cart > div > img{
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+#cart > div > h3{
+    margin: 10px;
+}
+
+#cart > div > button{
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+    text-transform: capitalize;
+    background-color: red;
+    color: #fff;
+    border: none;
+}
+
+#cart > div > button:hover{
+    cursor: pointer;
+    background-color: green;
+}

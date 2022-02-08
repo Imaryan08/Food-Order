@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+#navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #222;
+    padding: 5px;
+}
+
+#navbar > a{
+    margin: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+#navbar > a:last-child{
+    padding-right: 30px;
+}
+#navbar > a:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+
+/* payment page */
+
+
+ #container {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+  }
+  .card {
+    width: 22%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  @media (max-width: 1000px){
+    .card{
+      width: 60%;
+    }
+  }
+  @media (max-width: 700px){
+    .card{
+      width: 40%;
+    }
+  }
+  @media (max-width: 500px){
+    .card{
+      width: 80%;
+    }
+  }
+  .amt {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px 0px;
+  }
+  .cardNo,
+  .cvv,
+  .expiry {
+    color: gray;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 10px 0;
+  }
+  .cvv {
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+
+  #cardNumber {
+    width: 90%;
+    padding: 8px;
+    letter-spacing: 1px;
+  }
+  input {
+    padding: 7px;
+    width: 80%;
+    border-radius: 5px;
+    border-color: lightgray;
+  }
+  #name {
+    width: 90%;
+  }
+  .cardDetails {
+    display: flex;
+  }
+  .submit {
+    text-align: center;
+  }
+  button {
+    background-color: #1c2938;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    width: 70%;
+    margin: 20px 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+    color: gray;
+  }
+  button:active {
+    cursor: pointer;
+    color: #fff;
+    background-color: green;
+  }
